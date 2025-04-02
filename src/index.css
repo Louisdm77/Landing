@@ -1,1 +1,6 @@
 @import "tailwindcss";
+
+
+.animate__delay-750ms {
+  animation-delay: 0.75s;
+}

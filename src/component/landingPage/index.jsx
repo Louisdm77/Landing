@@ -156,7 +156,7 @@ const LandingPage = () => {
         ref={sectionRefs.hero}
         className={`pt-20 bg-blue-900 text-white min-h-screen flex items-center ${
           visibleSections.hero
-            ? "animate__animated animate__fadeInUp animate__slow"
+            ? "animate__animated animate__fadeInUp animate__slow animate__delay-500ms"
             : ""
         }`}
       >
@@ -166,7 +166,8 @@ const LandingPage = () => {
               Timeless Fashion Awaits
             </h1>
             <p className="mt-4 text-lg sm:text-xl text-gray-200 max-w-md mx-auto md:mx-0">
-              LuxWear brings you elegance, comfort, and sustainability in every stitch.
+              LuxWear brings you elegance, comfort, and sustainability in every
+              stitch.
             </p>
             <button
               onClick={() => scrollToSection("products")}
@@ -191,7 +192,7 @@ const LandingPage = () => {
         ref={sectionRefs.products}
         className={`py-20 bg-gray-50 ${
           visibleSections.products
-            ? "animate__animated animate__slideInLeft"
+            ? "animate__animated animate__slideInLeft animate__delay-500ms"
             : ""
         }`}
       >
@@ -232,7 +233,9 @@ const LandingPage = () => {
                   className="w-full h-64 object-contain"
                 />
                 <div className="p-4 text-center">
-                  <h3 className="text-lg font-semibold text-blue-900">{product.name}</h3>
+                  <h3 className="text-lg font-semibold text-blue-900">
+                    {product.name}
+                  </h3>
                   <p className="text-gray-600">{product.price}</p>
                   <button className="mt-4 px-6 py-2 bg-blue-900 text-white rounded-md hover:bg-blue-800 transition duration-200">
                     Add to Cart
@@ -250,7 +253,7 @@ const LandingPage = () => {
         ref={sectionRefs.categories}
         className={`py-20 bg-white ${
           visibleSections.categories
-            ? "animate__animated animate__zoomIn"
+            ? "animate__animated animate__zoomIn animate__delay-500ms"
             : ""
         }`}
       >
@@ -283,7 +286,9 @@ const LandingPage = () => {
                   className="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
-                  <h3 className="text-2xl font-semibold text-white">{category.name}</h3>
+                  <h3 className="text-2xl font-semibold text-white">
+                    {category.name}
+                  </h3>
                 </div>
               </div>
             ))}
@@ -297,7 +302,7 @@ const LandingPage = () => {
         ref={sectionRefs.testimonials}
         className={`py-20 bg-gray-100 ${
           visibleSections.testimonials
-            ? "animate__animated animate__bounceInUp"
+            ? "animate__animated animate__bounceInUp animate__delay-500ms"
             : ""
         }`}
       >
@@ -324,8 +329,12 @@ const LandingPage = () => {
                 key={index}
                 className="bg-white p-6 rounded-lg shadow-md text-center"
               >
-                <p className="text-gray-700 italic mb-4">"{testimonial.quote}"</p>
-                <p className="text-blue-900 font-semibold">-{testimonial.author}</p>
+                <p className="text-gray-700 italic mb-4">
+                  "{testimonial.quote}"
+                </p>
+                <p className="text-blue-900 font-semibold">
+                  -{testimonial.author}
+                </p>
               </div>
             ))}
           </div>
@@ -338,7 +347,7 @@ const LandingPage = () => {
         ref={sectionRefs.about}
         className={`py-20 bg-white ${
           visibleSections.about
-            ? "animate__animated animate__fadeInRight"
+            ? "animate__animated animate__fadeInRight animate__delay-500ms"
             : ""
         }`}
       >
@@ -355,7 +364,10 @@ const LandingPage = () => {
               About LuxWear
             </h2>
             <p className="text-lg text-gray-700 max-w-md mx-auto md:mx-0">
-              Founded with a passion for fashion and sustainability, LuxWear creates clothing that blends timeless design with modern craftsmanship. Our goal is to empower you to express your style, responsibly.
+              Founded with a passion for fashion and sustainability, LuxWear
+              creates clothing that blends timeless design with modern
+              craftsmanship. Our goal is to empower you to express your style,
+              responsibly.
             </p>
           </div>
         </div>
@@ -367,7 +379,7 @@ const LandingPage = () => {
         ref={sectionRefs.instagram}
         className={`py-20 bg-gray-50 ${
           visibleSections.instagram
-            ? "animate__animated animate__slideInUp"
+            ? "animate__animated animate__slideInUp animate__delay-500ms"
             : ""
         }`}
       >
@@ -400,14 +412,17 @@ const LandingPage = () => {
         ref={sectionRefs.newsletter}
         className={`py-20 bg-blue-900 text-white ${
           visibleSections.newsletter
-            ? "animate__animated animate__zoomIn animate__slow"
+            ? "animate__animated animate__zoomIn animate__slow animate__delay-500ms"
             : ""
         }`}
       >
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Join Our Community</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            Join Our Community
+          </h2>
           <p className="text-lg text-gray-300 mb-8">
-            Get exclusive discounts, style tips, and early access to new collections.
+            Get exclusive discounts, style tips, and early access to new
+            collections.
           </p>
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
             <input
@@ -428,7 +443,7 @@ const LandingPage = () => {
         ref={sectionRefs.contact}
         className={`py-20 bg-white ${
           visibleSections.contact
-            ? "animate__animated animate__fadeInUp"
+            ? "animate__animated animate__fadeInUp animate__delay-500ms"
             : ""
         }`}
       >
@@ -438,7 +453,9 @@ const LandingPage = () => {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div className="text-center md:text-left">
-              <h3 className="text-xl font-semibold text-blue-900 mb-4">Contact Us</h3>
+              <h3 className="text-xl font-semibold text-blue-900 mb-4">
+                Contact Us
+              </h3>
               <p className="text-gray-700">
                 Email: support@luxwear.com
                 <br />
@@ -481,16 +498,26 @@ const LandingPage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h3 className="text-2xl font-semibold mb-4">LuxWear</h3>
           <p className="text-sm mb-6">
-            © 2025 LuxWear. All rights reserved. Designed with passion for fashion.
+            © 2025 LuxWear. All rights reserved. Designed with passion for
+            fashion.
           </p>
           <div className="flex justify-center space-x-6">
-            <a href="#" className="hover:text-yellow-400 transition duration-200">
+            <a
+              href="#"
+              className="hover:text-yellow-400 transition duration-200"
+            >
               Instagram
             </a>
-            <a href="#" className="hover:text-yellow-400 transition duration-200">
+            <a
+              href="#"
+              className="hover:text-yellow-400 transition duration-200"
+            >
               Facebook
             </a>
-            <a href="#" className="hover:text-yellow-400 transition duration-200">
+            <a
+              href="#"
+              className="hover:text-yellow-400 transition duration-200"
+            >
               Twitter
             </a>
           </div>
