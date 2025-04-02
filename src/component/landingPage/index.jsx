@@ -428,7 +428,7 @@ const LandingPage = () => {
             <input
               type="email"
               placeholder="Your Email Address"
-              className="w-full sm:w-72 px-4 py-3 rounded-md text-gray-900 focus:outline-none focus:ring-2 focus:ring-yellow-500"
+              className="w-full sm:w-72 px-4 py-3 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-yellow-500 border border-2 border-yellow-500"
             />
             <button className="px-8 py-3 bg-yellow-500 text-blue-900 font-semibold rounded-md hover:bg-yellow-600 transition duration-300">
               Subscribe
