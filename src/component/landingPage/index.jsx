@@ -180,7 +180,7 @@ const LandingPage = () => {
             <img
               src="https://img.freepik.com/free-photo/low-angle-woman-dancing-outdoors_23-2149643024.jpg?t=st=1743509183~exp=1743512783~hmac=d567caa815e0987519ed563fcb2eacb9bc33c6bca8d16a7675655101c66ad1f8&w=740"
               alt="Hero Fashion"
-              className="w-full h-64 sm:h-80 md:h-[500px] object-cover rounded-md shadow-lg"
+              className="w-full h-96 sm:h-80 md:h-[500px] object-cover rounded-md shadow-lg mb-4"
             />
           </div>
         </div>
